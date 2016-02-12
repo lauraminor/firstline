@@ -6,7 +6,7 @@ class Grammar:
 
     # init
     #
-    # Initializes a grammar. If specified, 'start'is used as 
+    # Initializes a grammar. If specified, 'start' is used as 
     # the start string for a derivation performed by the
     # 'generate' method below.
     #
@@ -26,9 +26,7 @@ class Grammar:
     # Reads a grammar from a file with the given name.
     #
     def read(self, filename):
-        # This is broken but, for now, reads each line and
-        # prints its contents out to the console.
-        # NOW, instead of printing, it sets self.rules[lhs] to rhs
+        # Reads each line and sets self.rules[lhs] to rhs
         file = open(filename,'r')
         line = file.readline()[:-1]
         while line != '':
